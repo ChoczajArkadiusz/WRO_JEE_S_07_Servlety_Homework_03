@@ -2,15 +2,12 @@ package pl.coderslab;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 @WebServlet(name = "Servlet_05_1", urlPatterns = "/Servlet_05_1")
 public class Servlet_05_1 extends HttpServlet {

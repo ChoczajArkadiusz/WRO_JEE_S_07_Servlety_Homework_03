@@ -2,7 +2,6 @@ package pl.coderslab;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -40,7 +39,10 @@ public class Servlet_06 extends HttpServlet {
         response.getWriter().append("      \t- ").append(sum.toString()).append("\n");
         response.getWriter().append("Iloczyn: \n");
         response.getWriter().append("      \t- ").append(mul.toString()).append("\n");
+
+
     }
+
 
     public Double changeStringToInteger(String number) {
         Double value = 0.0;

@@ -32,11 +32,11 @@ public class Servlet_04 extends HttpServlet {
         if (visits == 1) {
             response.getWriter().append("Witaj pierwszy raz na naszej stronie");
             cookie = new Cookie("visits", "1");
-            cookie.setMaxAge(365 * 24 * 60 * 60);
         } else {
             response.getWriter().append("Witaj, odwiedziłeś nas już " + visits).append(" razy.");
         }
         cookie.setValue(visits.toString());
+        cookie.setMaxAge(365 * 24 * 60 * 60);
         response.addCookie(cookie);
 
     }

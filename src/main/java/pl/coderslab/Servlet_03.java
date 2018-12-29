@@ -7,8 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @WebServlet(name = "Servlet_03", urlPatterns = "/Servlet_03")
 public class Servlet_03 extends HttpServlet {
@@ -27,7 +25,10 @@ public class Servlet_03 extends HttpServlet {
         session.setAttribute("field4", field4);
         session.setAttribute("field5", field5);
 
+
     }
+
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");

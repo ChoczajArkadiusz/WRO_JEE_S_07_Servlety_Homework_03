@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wybor02</title>
+</head>
+<body>
+    <h4>Obrazek nr 02</h4>
+    <br>
+    <fieldset>
+        <legend> Czy podoba Ci się ten obrazek? </legend>
+        <form action='/favImages' method='post'>
+            <input type="hidden" name="pictureId" value="2">
+            <input type="radio" name="choice" value="Y"> Tak <br>
+            <input type="radio" name="choice" value="N"> Nie <br>
+            <br>
+            <input type='submit' name='userSubmit' value='Zatwierdź'>
+        </form>
+    </fieldset>
+    <br>
+    <picture>
+        <img src="/Images/pic02.jpg">
+    </picture>
+</body>
+</html>
